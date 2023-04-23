@@ -11,3 +11,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.dataChart, .current{
+  width: 34em;
+  padding: 2em;
+  margin: 0.5em;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+}
+
+.profiles{
+  width: 95%;
+  padding: 2em;
+  margin: 0.5em;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+}
+
+.charts, .currentValues{
+  margin: 0 auto;
+  display: flex;
+}
+.mainSection{
+  margin: 1em;
+}
+
+/* CSS */
+button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: rgb(34,139,34);
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.profiles{
+  display: flex;
+}
+.profileForm, .profileList, .currentProfile{
+  width: 35%;
+  padding: 1.5em
+}
+
+input{
+  width: 95%;
+  padding: 1em;
+  border-radius: 4px;
+  resize: vertical;
+  border: 1px solid;
+  margin: 0.5em;
+}
