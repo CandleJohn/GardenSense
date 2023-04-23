@@ -229,6 +229,7 @@ const App = () => {
         id: doc.id,
       }));
       filteredData = sortArray(filteredData)
+      filteredData = formatValue(filteredData)
       console.log("Light")
       console.log(filteredData)
       setLightData(filteredData)
