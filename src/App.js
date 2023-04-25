@@ -503,7 +503,7 @@ const App = () => {
           <div className="current">
             <h2>Current Light</h2>
             {lightData && lightData.length > 0 ? (
-              <h3>{lightData[lightData.length - 1].value}</h3>
+              <h3>{lightData[lightData.length - 1].value} seconds</h3>
             ) : (
               <p>No data available</p>
             )}
@@ -524,26 +524,32 @@ const App = () => {
             />
             <input
               placeholder="Minimum Temperature..."
+              type="number"
               onChange={(e) => setNewMinTemp(e.target.value)}
             />
             <input
               placeholder="Maximum Temperature..."
+              type="number"
               onChange={(e) => setNewMaxTemp(e.target.value)}
             />
             <input
               placeholder="Minimum Humidity..."
+              type="number"
               onChange={(e) => setNewMinHum(e.target.value)}
             />
             <input
               placeholder="Maximum Humidity..."
+              type="number"
               onChange={(e) => setNewMaxHum(e.target.value)}
             />
             <input
               placeholder="Minimum Light..."
+              type="number"
               onChange={(e) => setNewMinLight(e.target.value)}
             />
             <input
               placeholder="Maximum Light..."
+              type="number"
               onChange={(e) => setNewMaxLight(e.target.value)}
             />
             <button onClick={onSubmitProfile}>Add New Profile</button>
@@ -570,8 +576,8 @@ const App = () => {
                       <p>Maximum Temperature: {data.maxTemp}°C </p>
                       <p>Minimum Humidity: {data.minHum}% </p>
                       <p>Maximum Humidity: {data.maxHum}% </p>
-                      <p>Minimum Light: {data.minLight} </p>
-                      <p>Maximum Light: {data.maxLight} </p>
+                      <p>Minimum Light: {data.minLight} seconds</p>
+                      <p>Maximum Light: {data.maxLight} seconds</p>
                       {/* Render other data properties as needed */}
                     </div>
                   ) : (
